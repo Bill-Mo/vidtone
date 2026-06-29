@@ -27,12 +27,12 @@ Current responsibilities:
 - Playback mode and queue domain operations.
 - Playlist domain operations.
 - Pure Bilibili metadata to song and playlist transformations.
+- Pure YouTube metadata to song and playlist transformations.
 - Platform adapter interfaces for fetch, audio resolution, and cache access.
 
 Expected future responsibilities:
 
 - Source-agnostic resolver contracts.
-- Pure YouTube metadata to song and playlist transformations.
 
 ### `apps/*`
 
@@ -172,6 +172,7 @@ Use `docs/reference-repos.md` before inspecting or porting behavior from those r
 - `packages/core/src/platform.ts` defines adapter interfaces.
 - `packages/core/src/sources/input.ts` parses supported source inputs.
 - `packages/core/src/sources/bilibili.ts` maps Bilibili metadata into core song and playlist models.
+- `packages/core/src/sources/youtube.ts` maps YouTube metadata into core song and playlist models.
 - `packages/core/src/playback/playbackMode.ts` defines playback modes.
 - `packages/core/src/playlist/playlist.ts` defines playlist operations.
 - `packages/core/src/queue/queue.ts` defines queue operations.
