@@ -3,22 +3,22 @@
 ## Prerequisites
 
 - Node.js 20 or newer.
-- npm 10.8.2 or compatible npm 10 release.
+- pnpm 10.33.2 or compatible pnpm 10 release.
 
 ## Install
 
 ```sh
-npm install
+pnpm install
 ```
 
 ## Common Commands
 
 ```sh
-npm run typecheck
-npm run build
+pnpm run typecheck
+pnpm run build
 ```
 
-Current root scripts run across npm workspaces with `--workspaces --if-present`.
+Current root scripts run across pnpm workspaces with `pnpm -r --if-present`.
 
 ## Repository Layout
 
@@ -47,6 +47,7 @@ When adding a dependency:
 
 - Explain why it is needed.
 - Prefer package-level dependencies over root dependencies when usage is package-specific.
+- Use pnpm commands and keep `pnpm-lock.yaml` current.
 - Run the relevant verification command.
 - Update docs if setup or architecture changes.
 

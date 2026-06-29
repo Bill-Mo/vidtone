@@ -2,7 +2,7 @@
 
 ## Current Shape
 
-VidTone is a TypeScript monorepo using npm workspaces. It is Android-first, with shared source and playback-domain logic kept in reusable packages.
+VidTone is a TypeScript monorepo using pnpm workspaces. It is Android-first, with shared source and playback-domain logic kept in reusable packages.
 
 ```txt
 apps/

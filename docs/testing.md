@@ -7,8 +7,8 @@ The project currently has TypeScript verification but no dedicated test runner.
 Available checks:
 
 ```sh
-npm run typecheck
-npm run build
+pnpm run typecheck
+pnpm run build
 ```
 
 ## Expected Verification
@@ -20,8 +20,8 @@ For documentation-only changes:
 
 For TypeScript type or domain model changes:
 
-- Run `npm run typecheck`.
-- Run `npm run build` when emitted output or package exports may be affected.
+- Run `pnpm run typecheck`.
+- Run `pnpm run build` when emitted output or package exports may be affected.
 
 For future app changes:
 

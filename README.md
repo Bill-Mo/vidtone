@@ -32,8 +32,8 @@ This repository is designed to be agent-friendly. Agents should read `AGENTS.md`
 Common commands:
 
 ```sh
-npm run typecheck
-npm run build
+pnpm run typecheck
+pnpm run build
 ```
 
 Key docs:

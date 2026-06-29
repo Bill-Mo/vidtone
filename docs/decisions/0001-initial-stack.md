@@ -10,11 +10,13 @@ VidTone needs shared domain logic for multiple app surfaces, starting with a sma
 
 ## Decision
 
-Use a TypeScript npm workspace monorepo.
+Use a TypeScript workspace monorepo.
 
 The initial shared package is `@vidtone/core`, located at `packages/core`. It uses ESM and TypeScript declaration output.
 
 Planned app shells live under `apps/*`, while shared logic lives under `packages/*`.
+
+Package management was later changed to pnpm in `docs/decisions/0003-use-pnpm.md`.
 
 ## Consequences
 

@@ -6,7 +6,8 @@ Early project setup for an Android-first, agent-friendly MVP.
 
 ## Implemented
 
-- npm workspace root.
+- TypeScript workspace root.
+- pnpm workspace package management.
 - Shared `@vidtone/core` package.
 - Repository ignore rules for generated output, local environment files, and editor settings.
 - Product direction: Android app for adding, managing, and playing audio from YouTube and Bilibili videos.
