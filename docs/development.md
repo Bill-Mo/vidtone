@@ -29,6 +29,16 @@ docs/              Product, architecture, process, and project state.
 tasks/             Task templates for agent-friendly implementation requests.
 ```
 
+## Planned Mobile Stack
+
+- React Native with Expo.
+- React Navigation.
+- Zustand.
+- SQLite.
+- React Native Track Player.
+
+The first app implementation should stay smaller than the reference mobile app. Add only the dependencies needed for the current milestone.
+
 ## Environment Variables
 
 No environment variables are required yet.

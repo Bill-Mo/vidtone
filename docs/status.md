@@ -12,6 +12,8 @@ Early project setup for an Android-first, agent-friendly MVP.
 - Repository ignore rules for generated output, local environment files, and editor settings.
 - Product direction: Android app for adding, managing, and playing audio from YouTube and Bilibili videos.
 - Local reference-repo documentation for `NoxPlayer`, `azusa-player`, and `azusa-player-mobile`.
+- Accepted mobile stack direction: React Native, Expo, React Navigation, Zustand, SQLite, and React Native Track Player.
+- Accepted source pipeline: stable song metadata first, transient playable URL resolution on demand.
 - Core media models:
   - `MediaSource`
   - `Song`
@@ -40,14 +42,15 @@ Early project setup for an Android-first, agent-friendly MVP.
 - Platform policy and caching constraints for Bilibili and YouTube need review.
 - Error handling patterns are not yet defined.
 - No automated tests exist beyond TypeScript verification.
-- Android app stack is not yet decided.
+- Exact SQLite access layer is not yet decided.
+- Initial cache policy is not yet decided.
 
 ## Next Suggested Tasks
 
-1. Decide Android app stack and shell structure.
-2. Define MVP user flows.
-3. Inspect reference repos for source parsing and playback patterns.
-4. Add source URL parsing to `packages/core`.
-5. Add queue and playback domain models.
-6. Choose and configure a test runner.
-7. Scaffold the Android-first app shell.
+1. Define MVP user flows.
+2. Add source URL parsing to `packages/core`.
+3. Add queue and playback domain models.
+4. Choose and configure a test runner.
+5. Scaffold the Android-first app shell.
+6. Implement Bilibili metadata and audio URL resolver adapter.
+7. Implement YouTube metadata and audio URL resolver adapter.
