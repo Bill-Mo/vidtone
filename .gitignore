@@ -6,6 +6,7 @@ coverage/
 .vite/
 .expo/
 .DS_Store
+.vscode/
 *.log
 *.tsbuildinfo
 .env
