@@ -14,6 +14,7 @@ pnpm install
 ## Common Commands
 
 ```sh
+pnpm run test
 pnpm run typecheck
 pnpm run build
 ```

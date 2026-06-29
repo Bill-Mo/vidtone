@@ -2,11 +2,12 @@
 
 ## Current State
 
-The project currently has TypeScript verification but no dedicated test runner.
+The project currently uses Node's built-in test runner for `packages/core` behavior tests, plus TypeScript verification and build checks.
 
 Available checks:
 
 ```sh
+pnpm run test
 pnpm run typecheck
 pnpm run build
 ```
@@ -20,6 +21,7 @@ For documentation-only changes:
 
 For TypeScript type or domain model changes:
 
+- Run `pnpm run test` when behavior is covered by tests or should be covered by tests.
 - Run `pnpm run typecheck`.
 - Run `pnpm run build` when emitted output or package exports may be affected.
 
@@ -31,9 +33,9 @@ For future app changes:
 
 ## Future Test Strategy
 
-Add focused tests around:
+Maintain or add focused tests around:
 
-- Source URL parsing.
+- Source input parsing.
 - Playlist and queue operations.
 - Playback mode transitions.
 - Resolver contracts.

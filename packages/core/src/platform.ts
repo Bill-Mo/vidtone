@@ -3,10 +3,10 @@ export interface RequestAdapter {
 }
 
 export interface AudioResolver {
-  resolve(song: import('./media').Song): Promise<import('./media').ResolvedMediaUrl>;
+  resolve(song: import('./media.js').Song): Promise<import('./media.js').ResolvedMediaUrl>;
 }
 
 export interface CacheAdapter {
-  get(song: import('./media').Song): Promise<string | null>;
-  put(song: import('./media').Song, media: import('./media').ResolvedMediaUrl): Promise<string | null>;
+  get(song: import('./media.js').Song): Promise<string | null>;
+  put(song: import('./media.js').Song, media: import('./media.js').ResolvedMediaUrl): Promise<string | null>;
 }

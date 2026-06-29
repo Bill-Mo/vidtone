@@ -1,2 +1,5 @@
-export * from './media';
-export * from './platform';
+export * from './media.js';
+export * from './platform.js';
+export * from './playback/playbackMode.js';
+export * from './queue/queue.js';
+export * from './sources/input.js';

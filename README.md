@@ -32,6 +32,7 @@ This repository is designed to be agent-friendly. Agents should read `AGENTS.md`
 Common commands:
 
 ```sh
+pnpm run test
 pnpm run typecheck
 pnpm run build
 ```

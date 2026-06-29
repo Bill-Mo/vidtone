@@ -50,6 +50,7 @@ If no documentation needs to change, say why in the final response.
 Use the narrowest reliable verification for the change. Current standard commands are:
 
 ```sh
+pnpm run test
 pnpm run typecheck
 pnpm run build
 ```

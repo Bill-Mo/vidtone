@@ -4,12 +4,9 @@
   "private": true,
   "description": "Android-first audio player for video sources.",
   "packageManager": "pnpm@10.33.2",
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ],
   "scripts": {
     "build": "pnpm -r --if-present build",
+    "test": "pnpm -r --if-present test",
     "typecheck": "pnpm -r --if-present typecheck"
   },
   "engines": {

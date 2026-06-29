@@ -23,16 +23,16 @@ Early project setup for an Android-first, agent-friendly MVP.
   - `RequestAdapter`
   - `AudioResolver`
   - `CacheAdapter`
+- Core source input parsing for Bilibili and YouTube video inputs.
+- Core playback mode and queue domain operations.
+- Node test runner coverage for core source input parsing.
 - Agent workflow and documentation baseline.
 
 ## Not Yet Implemented
 
 - Android-first app shell.
-- Source URL parsing.
 - Audio resolver implementations.
-- Queue and playback state logic.
 - Persistent storage.
-- Test runner.
 - Linting.
 - Environment variable template.
 
@@ -41,16 +41,13 @@ Early project setup for an Android-first, agent-friendly MVP.
 - MVP user flow needs more detail.
 - Platform policy and caching constraints for Bilibili and YouTube need review.
 - Error handling patterns are not yet defined.
-- No automated tests exist beyond TypeScript verification.
 - Exact SQLite access layer is not yet decided.
 - Initial cache policy is not yet decided.
 
 ## Next Suggested Tasks
 
 1. Define MVP user flows.
-2. Add source URL parsing to `packages/core`.
-3. Add queue and playback domain models.
-4. Choose and configure a test runner.
-5. Scaffold the Android-first app shell.
-6. Implement Bilibili metadata and audio URL resolver adapter.
-7. Implement YouTube metadata and audio URL resolver adapter.
+2. Scaffold the Android-first app shell.
+3. Implement Bilibili metadata and audio URL resolver adapter.
+4. Implement YouTube metadata and audio URL resolver adapter.
+5. Add persistence repositories for songs, playlists, and playback queue.
