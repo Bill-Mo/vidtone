@@ -25,12 +25,11 @@ Current responsibilities:
 - Media source types.
 - Song, playlist, and resolved media URL models.
 - Playback mode and queue domain operations.
+- Playlist domain operations.
 - Platform adapter interfaces for fetch, audio resolution, and cache access.
 
 Expected future responsibilities:
 
-- Source input parsing.
-- Playlist domain operations.
 - Source-agnostic resolver contracts.
 - Pure transformation from source metadata to `Song` and `Playlist` models.
 
@@ -171,6 +170,7 @@ Use `docs/reference-repos.md` before inspecting or porting behavior from those r
 - `packages/core/src/platform.ts` defines adapter interfaces.
 - `packages/core/src/sources/input.ts` parses supported source inputs.
 - `packages/core/src/playback/playbackMode.ts` defines playback modes.
+- `packages/core/src/playlist/playlist.ts` defines playlist operations.
 - `packages/core/src/queue/queue.ts` defines queue operations.
 - `packages/core/src/index.ts` re-exports the public core API.
 
