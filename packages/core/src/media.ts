@@ -4,6 +4,8 @@ export interface Song {
   id: string;
   source: MediaSource;
   sourceId: string;
+  sourcePartId?: string;
+  sourceUrl?: string;
   title: string;
   artist?: string;
   album?: string;

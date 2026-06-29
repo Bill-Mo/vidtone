@@ -24,9 +24,10 @@ Early project setup for an Android-first, agent-friendly MVP.
   - `AudioResolver`
   - `CacheAdapter`
 - Core source input parsing for Bilibili and YouTube video inputs.
+- Core Bilibili metadata to song and playlist mapping.
 - Core playback mode and queue domain operations.
 - Core playlist domain operations.
-- Node test runner coverage for core source input, queue, and playlist behavior.
+- Node test runner coverage for core source input, Bilibili mapping, queue, and playlist behavior.
 - Agent workflow and documentation baseline.
 
 ## Not Yet Implemented

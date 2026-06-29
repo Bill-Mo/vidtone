@@ -26,12 +26,13 @@ Current responsibilities:
 - Song, playlist, and resolved media URL models.
 - Playback mode and queue domain operations.
 - Playlist domain operations.
+- Pure Bilibili metadata to song and playlist transformations.
 - Platform adapter interfaces for fetch, audio resolution, and cache access.
 
 Expected future responsibilities:
 
 - Source-agnostic resolver contracts.
-- Pure transformation from source metadata to `Song` and `Playlist` models.
+- Pure YouTube metadata to song and playlist transformations.
 
 ### `apps/*`
 
@@ -63,6 +64,7 @@ Expected `apps/mobile` responsibilities:
 - Android playback, background audio, permissions, and storage integrations should stay outside `packages/core`.
 - Bilibili and YouTube client setup should stay outside `packages/core` when it requires credentials, cookies, request headers, platform APIs, or third-party clients.
 - Stored song metadata should not depend on a currently valid media URL. Playable URLs are resolved on demand and may expire.
+- `Song.sourceId` stores the stable source video id. `Song.sourcePartId` stores an optional platform part id such as Bilibili `cid`.
 
 ## Data Flow
 
@@ -169,6 +171,7 @@ Use `docs/reference-repos.md` before inspecting or porting behavior from those r
 - `packages/core/src/media.ts` defines media source, song, playlist, and resolved URL types.
 - `packages/core/src/platform.ts` defines adapter interfaces.
 - `packages/core/src/sources/input.ts` parses supported source inputs.
+- `packages/core/src/sources/bilibili.ts` maps Bilibili metadata into core song and playlist models.
 - `packages/core/src/playback/playbackMode.ts` defines playback modes.
 - `packages/core/src/playlist/playlist.ts` defines playlist operations.
 - `packages/core/src/queue/queue.ts` defines queue operations.
